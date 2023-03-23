@@ -1,5 +1,5 @@
 # Metal3-MockLanding-page
-This is my Github repository with the code for the landing page task. I used a lot of online resources here and went through Youtube videos like they were packs of cookies. When I started the Metal3 project, I didn't meet all the skills listed, and I was mildly surprised that I scaled through the first stage.
+This is my Github repository with the code for the Metal3 landing page task. I used a lot of online resources here and went through Youtube videos like they were packs of cookies. When I started the Metal3 project, I didn't meet all the skills listed, and I was mildly surprised that I scaled through the first stage.
 
 It didn't get easier when I heard that the second contribution required us to code in HTML and CSS. I have limited knowledge of these languages since I am predominantly a writer, so I was a little worried. But I gave it a shot and here we are. 
 
