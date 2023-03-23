@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Metal³ | Kubernetes-native Bare Metal Provisioning</title>
+    <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.16/dist/tailwind.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <link rel="stylesheet" href="https://unpkg.com/@heroicons/vue@1.0.4">
+    <style>
+        :root {
+            --primary: #01EEC4;
+            --secondary: #00D6B0;
+            --tertiary: #00A9A9;
+            --quaternary: #008585;
+            --white: #FFF;
+            --light-gray: #FAFAFA;
+            --medium-gray: #F6F6F6;
+            --dark-gray: #EDEDED;
+            --black: #454545;
+            --extra-dark: #202020;
+        }
+
+        body {
+            font-family: 'Nunito Sans', sans-serif;
+            background-color: var(--extra-dark);
+            color: var(--white);
+        }
+
+        .btn-dark-green {
+    background-color: var(--quaternary);
+    }
+
+        .navbar {
+            background-color: var(--quaternary);
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+        }
+
+        .navbar a {
+            color: var(--white);
+        }
+
+        .footer {
+            background-color: var(--extra-dark);
+            color: var(--white);
+        }
+
+        .footer a {
+            color: var(--white);
+        }
+
+        .benefits-section-bg {
+            background-color: var(--medium-gray);
+            color: var(--black);
+        }
+        .pattern-bg {
+            background-image: url("https://www.heropatterns.com/assets/tiny_graph.png");
+            background-repeat: repeat;
+            background-size: 20px 20px;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <nav class="navbar p-4">
+            <div class="container mx-auto">
+                <div class="flex items-center justify-between">
+                    <img src="https://i.ibb.co/f0b64gz/metal³logo.png" alt="Metal³ Logo" class="h-8 w-auto mr-2">
+                <a href="/" class="font-bold text-xl">Metal³</a>
+                <div class="ml-auto">
+                    <a href="/home" class="ml-4">Home</a>
+                    <a href="/blog" class="ml-4">Blog</a>
+                    <a href="/resources" class="ml-4">Resources</a>
+                    <a href="/community" class="ml-4">Community</a>
+                </div>
+            </div>
+        </nav>
+    </header>
+    <section class="hero py-20">
+        <div class="container mx-auto px-4">
+            <div class="md:flex md:items-center">
+                <div class="md:w-1/2">
+                    <h1 class="text-5xl font-bold animate__animated animate__fadeInLeft">Metal³</h1>
+                    <h2 class="text-3xl font-bold mb-4">Kubernetes-native Bare Metal Provisioning</h2>
+                    <p class="text-xl mt-4 animate__animated animate__fadeInLeft mb-4">Metal³ (“Metal Cubed”) is an open-source project that makes deploying and managing Kubernetes clusters on bare metal servers a breeze with Ironic.</p>
+                    <a href="#" class="btn-dark-green hover:bg-secondary text-white font-bold py-2 px-4 rounded mb-4">Get Started With Metal³</a>
+                </div>
+                <div class="md:w-1/2 mt-8 md:mt-4 mr-4">
+                    <img src="https://i.ibb.co/rxLMS0w/pngwing-com.png" alt="Kubernetes and Metal³" class="w-full animate__animated animate__fadeInRight">
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="about-us-section bg-white text-gray-900 py-20">
+        <div class="container mx-auto px-4">
+            <h2 class="text-3xl font-bold mb-4">About Metal³</h2>
+            <p class="mb-4 text-gray-900">Welcome to Metal³, the open-source project that brings Kubernetes and bare metal infrastructure together in perfect harmony. We're all about making your life easier, one server at a time.</p>
+            <p class="mb-4 text-gray-900">Our mission? To simplify bare metal infrastructure management and make Kubernetes accessible to everyone, regardless of hardware. We're committed to offering a seamless experience with a unified API, scalability, reliability, and customization options.</p>
+            <p class="mb-4 text-gray-900">Metal³ is powered by three core components:</p>
+            <ul class="mb-4 list-disc list-inside text-gray-900">
+                <li><strong>Bare Metal Host Operator (BMH):</strong> The behind-the-scenes Kubernetes controller working with Ironic to manage resources like a boss.</li>
+                <li><strong>Cluster API Metal³ Provider:</strong> The trusty sidekick ensuring your Kubernetes clusters run smoothly on bare metal hosts.</li>
+                <li><strong>Ironic Image:</strong> The open-source provisioning tool enabling Metal³ to work its magic on any kind of hardware.</li>
+            </ul>
+            <p class="text-gray-900">Our project offers a plethora of benefits, including simplified and scalable bare-metal infrastructure management, Kubernetes goodness for all, and a rich set of APIs and tools for your specific needs.</p>
+        </div>
+       </div>
+</div> 
+    </section>
+    <section class="learn-more-section bg-extra-dark py-10">
+        <div class="container mx-auto px-4 flex justify-between items-center">
+            <div>
+                <h2 class="text-3xl font-bold mb-4">Dive deeper into the Metal-Verse</h2>
+                <p class="mb-4 text-white-900"> Learn more about how to make the most of the Metal³io features in your work.</p>
+            </div>
+            <a href="#" class="btn-dark-green hover:bg-secondary text-white font-bold py-2 px-4 rounded">Check Out Our User Guide</a>
+        </div>
+    </section>    
+    <section class="benefits-section-bg py-20">
+        <div class="container mx-auto px-4">
+            <h2 class="text-3xl font-bold mb-8 animate__animated animate__fadeInUp">Why Metal³?</h2>
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+                <div class="animate__animated animate__fadeInUp">
+                    <h3 class="text-2xl font-bold">Kubernetes Native API</h3>
+                    <p class="mt-2">Manage your underlying infrastructure through Kubernetes APIs using the Metal³ and machine-api CRDs. </p>
+                </div>
+                <div class="animate__animated animate__fadeInUp">
+                    <h3 class="text-2xl font-bold">Self-Hosted </h3>
+                    <p class="mt-2">Metal³ operates directly within your Kubernetes cluster, integrating seamlessly with your existing infrastructure, eliminating the need for external dependencies.</p>
+                </div>
+                <div class="animate__animated animate__fadeInUp">
+                    <h3 class="text-2xl font-bold">Self-Managed </h3>
+                    <p class="mt-2">Integration with the Machine API from SIG Cluster-Lifecycle allows your bare metal cluster to manage its own growth. just like your cloud-based clusters</p>
+                </div>
+            </div>
+        </div>
+    </section>
+    <footer class="footer py-8">
+        <div class="container mx-auto px-4">
+            <div class="md:flex md:justify-between">
+                <div class="text-center md:text-left mb-4 md:mb-0">
+                    <h3 class="text-xl font-bold mb-2">Metal³</h3>
+                    <p>&copy; 2023 Metal³.io. All rights reserved.</p>
+                </div>
+                <div class="text-center md:text-left">
+                    <h3 class="text-xl font-bold mb-2">Stay Updated</h3>
+                    <form class="mt-2">
+                        <button type="submit" class="btn-dark-green text-white py-2 px-6 rounded">Join The Mailing List</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </footer>    
+</body>
+</html>
+
+
