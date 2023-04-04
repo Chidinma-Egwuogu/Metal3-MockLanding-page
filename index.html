@@ -28,6 +28,16 @@
             color: var(--white);
         }
 
+        ul {
+            list-style-type: none;
+            padding-left: 0;
+        }
+        
+        li {
+            text-indent: -1em;
+            padding-left: 1em;
+        }
+       
         .btn-dark-green {
     background-color: var(--quaternary);
     }
@@ -64,15 +74,22 @@
 <body>
     <header>
         <nav class="navbar p-4">
-            <div class="container mx-auto">
+            <div class="container mx-auto px-4">
                 <div class="flex items-center justify-between">
-                    <img src="https://i.ibb.co/f0b64gz/metal³logo.png" alt="Metal³ Logo" class="h-8 w-auto mr-2">
-                <a href="/" class="font-bold text-xl">Metal³</a>
-                <div class="ml-auto">
-                    <a href="/home" class="ml-4">Home</a>
-                    <a href="/blog" class="ml-4">Blog</a>
-                    <a href="/resources" class="ml-4">Resources</a>
-                    <a href="/community" class="ml-4">Community</a>
+                    <a href="/" class="flex items-center space-x-2 font-bold text-xl">
+                        <img src="https://res.cloudinary.com/dcmebmhru/image/upload/v1680572397/metal3logo_pms4yh.png" alt="Metal3 Logo" class="w-8 h-8">
+                        <span>Metal³</span>
+                    </a>
+                    <div class="hidden md:flex ml-auto space-x-4">
+                        <a href="/home">Home</a>
+                        <a href="/blog">Blog</a>
+                        <a href="/resources">Resources</a>
+                        <a href="/community">Community</a>
+                    </div>
+                    <button class="md:hidden p-2 rounded-md focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-primary">
+                        <span class="sr-only">Open menu</span>
+                        <i class="fas fa-bars"></i>
+                    </button>
                 </div>
             </div>
         </nav>
@@ -84,13 +101,13 @@
                     <h1 class="text-5xl font-bold animate__animated animate__fadeInLeft">Metal³</h1>
                     <h2 class="text-3xl font-bold mb-4">Kubernetes-native Bare Metal Provisioning</h2>
                     <p class="text-xl mt-4 animate__animated animate__fadeInLeft mb-4">Metal³ (“Metal Cubed”) is an open-source project that makes deploying and managing Kubernetes clusters on bare metal servers a breeze with Ironic.</p>
-                    <a href="#" class="btn-dark-green hover:bg-secondary text-white font-bold py-2 px-4 rounded mb-4">Get Started With Metal³</a>
+                    <a href="#" class="btn-dark-green hover:bg-secondary text-white font-bold py-2 px-4 rounded mb-4">Get Started with Metal³</a>
                 </div>
-                <div class="md:w-1/2 mt-8 md:mt-4 mr-4">
+                 <div class="md:w-1/2 mt-8 md:mt-4 mr-4">
                     <img src="https://i.ibb.co/rxLMS0w/pngwing-com.png" alt="Kubernetes and Metal³" class="w-full animate__animated animate__fadeInRight">
                 </div>
-            </div>
-        </div>
+</div>
+</div>
     </section>
     <section class="about-us-section bg-white text-gray-900 py-20">
         <div class="container mx-auto px-4">
@@ -99,11 +116,11 @@
             <p class="mb-4 text-gray-900">Our mission? To simplify bare metal infrastructure management and make Kubernetes accessible to everyone, regardless of hardware. We're committed to offering a seamless experience with a unified API, scalability, reliability, and customization options.</p>
             <p class="mb-4 text-gray-900">Metal³ is powered by three core components:</p>
             <ul class="mb-4 list-disc list-inside text-gray-900">
-                <li><strong>Bare Metal Host Operator (BMH):</strong> The behind-the-scenes Kubernetes controller working with Ironic to manage resources like a boss.</li>
+                <li><strong>Bare Metal Host Operator:</strong> The behind-the-scenes Kubernetes controller working with Ironic to manage resources.</li>
                 <li><strong>Cluster API Metal³ Provider:</strong> The trusty sidekick ensuring your Kubernetes clusters run smoothly on bare metal hosts.</li>
                 <li><strong>Ironic Image:</strong> The open-source provisioning tool enabling Metal³ to work its magic on any kind of hardware.</li>
             </ul>
-            <p class="text-gray-900">Our project offers a plethora of benefits, including simplified and scalable bare-metal infrastructure management, Kubernetes goodness for all, and a rich set of APIs and tools for your specific needs.</p>
+            <p class="text-gray-900">Our project simplifies the deployment and management of Kubernetes clusters on bare metal infrastructure. By leveraging Ironic, a powerful bare metal management tool, Metal³ streamlines the process of setting up, scaling, and maintaining Kubernetes clusters on physical servers.</p>
         </div>
        </div>
 </div> 
@@ -112,14 +129,14 @@
         <div class="container mx-auto px-4 flex justify-between items-center">
             <div>
                 <h2 class="text-3xl font-bold mb-4">Dive deeper into the Metal-Verse</h2>
-                <p class="mb-4 text-white-900"> Learn more about how to make the most of the Metal³io features in your work.</p>
+                <p class="mb-4 text-white-900"> Learn more about how to make the most of Metal³ features in your work.</p>
             </div>
             <a href="#" class="btn-dark-green hover:bg-secondary text-white font-bold py-2 px-4 rounded">Check Out Our User Guide</a>
         </div>
     </section>    
     <section class="benefits-section-bg py-20">
         <div class="container mx-auto px-4">
-            <h2 class="text-3xl font-bold mb-8 animate__animated animate__fadeInUp">Why Metal³ ?</h2>
+            <h2 class="text-4xl font-bold mb-16 animate__animated animate__fadeInUp">Why Metal³ ?</h2>
             <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
                 <div class="animate__animated animate__fadeInUp">
                     <h3 class="text-2xl font-bold">Kubernetes Native API</h3>
